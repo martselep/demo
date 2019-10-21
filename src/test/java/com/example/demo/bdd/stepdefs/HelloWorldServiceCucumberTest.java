@@ -10,16 +10,15 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-public class MyStepdefsTest {
+public class HelloWorldServiceCucumberTest {
 
     final String name = "Marianna";
     final HelloWorldService helloWorldService;
     String result;
-    Logger logger = LoggerFactory.getLogger(MyStepdefsTest.class);
+    Logger logger = LoggerFactory.getLogger(HelloWorldServiceCucumberTest.class);
 
     @Autowired
-    public MyStepdefsTest(HelloWorldService helloWorldService) {
+    public HelloWorldServiceCucumberTest(HelloWorldService helloWorldService) {
         this.helloWorldService = helloWorldService;
     }
 
