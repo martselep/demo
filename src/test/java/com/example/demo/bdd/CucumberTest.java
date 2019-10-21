@@ -1,15 +1,14 @@
 package com.example.demo.bdd;
 
 import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
-@RunWith(CucumberReportRunner.class)
+@RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/",plugin = {
         "pretty",
-        "html:target/cucumber-html-report",
-        "json:target/cucumber-report.json",
-        "junit:target/cucumber.xml",
-        "rerun:target/rerun.txt",
+        "json:target/cucumber-report/cucumber.json"
+
 },
         glue = "com.example.demo.bdd"
 )
